@@ -11,7 +11,15 @@ export class ProductListComponent implements OnInit {
   imageWidth = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
-  listFilter: string = 'cart';
+  // listFilter: string = 'cart';
+
+  private _listFilter: string = '';
+  get listFilter(): string {
+    return this._listFilter;
+  }
+  set listFilter(value: string) {
+    this._listFilter = value;
+  }
 
   products: IProduct[] = [
     {
