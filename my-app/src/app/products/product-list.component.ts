@@ -5,7 +5,10 @@ import { Component } from "@angular/core";
   templateUrl: './product-list.component.html'
 })
 export class ProductListComponent {
-  pageTitle: string = 'Product List';
+  pageTitle = 'Product List';
+  imageWidth = 50;
+  imageMargin: number = 2;
+  
   products: any[] = [
     {
       'productId': 2,
@@ -15,7 +18,7 @@ export class ProductListComponent {
       'description': '15 gallon capacity rolling garden cart',
       'price': 32.99,
       'starRating': 4.2,
-      'imageUrl': 'asserts/images/garden_cart.png'
+      'imageUrl': 'assets/garden_cart.png'
     },
     {
       'productId': 5,
@@ -25,7 +28,7 @@ export class ProductListComponent {
       'description': 'Curved claw steel hammer',
       'price': 8.9,
       'starRating': 4.8,
-      'imageUrl': 'asserts/images/hammer.png'
+      'imageUrl': 'assets/hammer.png'
     }
   ];
 }
