@@ -7,7 +7,6 @@ import { StarComponent } from '../shared/star.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ProductDetailGuard } from './product-detail.guard';
-import { WelcomeComponent } from '../home/welcome.component';
 
 
 @NgModule({
